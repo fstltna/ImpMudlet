@@ -1,0 +1,1910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MudletPackage>
+<MudletPackage version="1.0">
+    <TriggerPackage>
+        <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+            <name>ship report</name>
+            <script></script>
+            <triggerType>0</triggerType>
+            <conditonLineDelta>0</conditonLineDelta>
+            <mStayOpen>0</mStayOpen>
+            <mCommand></mCommand>
+            <packageName></packageName>
+            <mFgColor>#ff0000</mFgColor>
+            <mBgColor>#ffff00</mBgColor>
+            <mSoundFile></mSoundFile>
+            <colorTriggerFgColor>#000000</colorTriggerFgColor>
+            <colorTriggerBgColor>#000000</colorTriggerBgColor>
+            <regexCodeList/>
+            <regexCodePropertyList/>
+            <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                <name>Which</name>
+                <script></script>
+                <triggerType>0</triggerType>
+                <conditonLineDelta>0</conditonLineDelta>
+                <mStayOpen>0</mStayOpen>
+                <mCommand></mCommand>
+                <packageName></packageName>
+                <mFgColor>#ff0000</mFgColor>
+                <mBgColor>#ffff00</mBgColor>
+                <mSoundFile></mSoundFile>
+                <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                <regexCodeList/>
+                <regexCodePropertyList/>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>status</name>
+                    <script>clearWindow(&quot;GUI.Ship.UI.ship_status&quot;)
+GUI.Ship.UI.ship_status:echo(line..&quot;\n&quot;)
+--deleteLine()</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string> Ship #    T| Row,Col |F| Eff| TF|Energ| Fuel|Armor|Price|  Planet|Name</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>3</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>config</name>
+                    <script>clearWindow(&quot;GUI.Ship.UI.ship_config&quot;)
+GUI.Ship.UI.ship_config:echo(line..&quot;\n&quot;)
+--deleteLine()</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string> Ship #    T| Row,Col |F|Energ| Shld|ShLev| D A K</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>3</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>cargo</name>
+                    <script>clearWindow(&quot;GUI.Ship.UI.ship_cargo&quot;)
+GUI.Ship.UI.ship_cargo:echo(line..&quot;\n&quot;)
+--deleteLine()</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string> Ship #  T Avl|Civ|Sci|Mil|Off|Mis|Pln|Ore|Bar|Air|FTn|Cmp|Eng|Lif|Ele|Wpn</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>3</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>big item</name>
+                    <script>--deleteLine()</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string> Item   | Ship   | TF | T | Wgt | Eff | Ins</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>3</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+            </TriggerGroup>
+            <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                <name>Info</name>
+                <script></script>
+                <triggerType>0</triggerType>
+                <conditonLineDelta>0</conditonLineDelta>
+                <mStayOpen>0</mStayOpen>
+                <mCommand></mCommand>
+                <packageName></packageName>
+                <mFgColor>#ff0000</mFgColor>
+                <mBgColor>#ffff00</mBgColor>
+                <mSoundFile></mSoundFile>
+                <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                <regexCodeList/>
+                <regexCodePropertyList/>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>big items</name>
+                    <script>local num = string.trim(matches[3])
+local item = string.trim(matches[2])
+local big_items = {
+  c = &quot;comp&quot;,
+  e = &quot;engine&quot;,
+  l = &quot;lifesup&quot;,
+  s = &quot;sens&quot;,
+  t = &quot;telep&quot;,
+}
+
+sys.ship[num] = sys.ship[num] or {}
+
+sys.ship[num].big_item = sys.ship[num].big_item or {}
+
+sys.ship[num].big_item[item] = sys.ship[num].big_item[item] or {}
+sys.ship[num].big_item[item].TF = string.trim(matches[4])
+sys.ship[num].big_item[item].T = string.trim(matches[5])
+sys.ship[num].big_item[item].Wgt = string.trim(matches[6])
+sys.ship[num].big_item[item].Eff = string.trim(matches[7])
+sys.ship[num].big_item[item].Ins = string.trim(matches[8])
+
+for k,v in pairs( big_items ) do
+  if sys.ship[num].big_item[item].T == k then
+    clearWindow(&quot;GUI.Ship.UI.ship_&quot;..big_items[k])
+    GUI.Ship.UI[&quot;ship_&quot;..big_items[k]]:echo(&quot; Item   | Ship   | TF | T | Wgt | Eff | Ins\n&quot;)
+    local result = line:gsub(&quot;!$3&quot;,&quot;&quot;)
+    GUI.Ship.UI[&quot;ship_&quot;..big_items[k]]:echo(result..&quot;\n&quot;)
+  end
+end
+--deleteLine()</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string>^\!\$3(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)$</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>1</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>status info</name>
+                    <script>local result = line:gsub(&quot;!$1&quot;,&quot;&quot;)
+
+local num = string.trim(matches[2])
+sys.ship[num] = sys.ship[num] or {}
+
+sys.ship[num].T = string.trim(matches[3])
+sys.ship[num].Row = string.trim(matches[4])
+sys.ship[num].Col = string.trim(matches[5])
+sys.ship[num].F = string.trim(matches[6])
+sys.ship[num].Eff = string.trim(matches[7])
+sys.ship[num].TF = string.trim(matches[8])
+sys.ship[num].Energ = string.trim(matches[9])
+sys.ship[num].Fuel = string.trim(matches[10])
+sys.ship[num].Armor = string.trim(matches[11])
+sys.ship[num].Price = string.trim(matches[12])
+sys.ship[num].Planet = string.trim(matches[13])
+sys.ship[num].Name = string.trim(matches[14])
+
+GUI.Ship.UI.ship_status:echo(result..&quot;\n&quot;)
+--deleteLine()</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string>^\!\$1(.*) (.*)\|(.*),(.*)\|(.*)\|(.*)\%\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|$</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>1</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>config info</name>
+                    <script>local result = line:gsub(&quot;!$4&quot;,&quot;&quot;)
+
+local num = string.trim(matches[2])
+sys.ship[num] = sys.ship[num] or {}
+
+sys.ship[num].T = string.trim(matches[3])
+sys.ship[num].Row = string.trim(matches[4])
+sys.ship[num].Col = string.trim(matches[5])
+sys.ship[num].F = string.trim(matches[6])
+sys.ship[num].Energ = string.trim(matches[7])
+sys.ship[num].Shld = string.trim(matches[8])
+sys.ship[num].ShLev = string.trim(matches[9])
+sys.ship[num].D = string.trim(matches[10])
+sys.ship[num].A = string.trim(matches[11])
+sys.ship[num].K = string.trim(matches[12])
+
+GUI.Ship.UI.ship_config:echo(result..&quot;\n&quot;)
+--deleteLine()</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string>^\!\$4(.*) (.*)\|(.*),(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*) (.*) (.*)$</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>1</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>cargo info</name>
+                    <script>local result = line:gsub(&quot;!$2&quot;,&quot;&quot;)
+
+local num = string.trim(matches[2])
+sys.ship[num] = sys.ship[num] or {}
+
+sys.ship[num].T = string.trim(matches[3])
+sys.ship[num].Avl = string.trim(matches[4])
+sys.ship[num].Civ = string.trim(matches[5])
+sys.ship[num].Sci = string.trim(matches[6])
+sys.ship[num].Mil = string.trim(matches[7])
+sys.ship[num].Off = string.trim(matches[8])
+sys.ship[num].Mis = string.trim(matches[9])
+sys.ship[num].Pln = string.trim(matches[10])
+sys.ship[num].Ore = string.trim(matches[11])
+sys.ship[num].Bar = string.trim(matches[12])
+sys.ship[num].Air = string.trim(matches[13])
+sys.ship[num].FTn = string.trim(matches[14])
+sys.ship[num].Cmp = string.trim(matches[15])
+sys.ship[num].Engd = string.trim(matches[16])
+sys.ship[num].Lif = string.trim(matches[17])
+sys.ship[num].Ele = string.trim(matches[18])
+sys.ship[num].Wpn = string.trim(matches[19])
+
+GUI.Ship.UI.ship_cargo:echo(result..&quot;\n&quot;)
+--deleteLine()</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string>^!\$2(.*) (.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)\|(.*)$</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>1</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+            </TriggerGroup>
+        </TriggerGroup>
+        <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+            <name>planet census</name>
+            <script></script>
+            <triggerType>0</triggerType>
+            <conditonLineDelta>0</conditonLineDelta>
+            <mStayOpen>0</mStayOpen>
+            <mCommand></mCommand>
+            <packageName></packageName>
+            <mFgColor>#ff0000</mFgColor>
+            <mBgColor>#ffff00</mBgColor>
+            <mSoundFile></mSoundFile>
+            <colorTriggerFgColor>#000000</colorTriggerFgColor>
+            <colorTriggerBgColor>#000000</colorTriggerBgColor>
+            <regexCodeList/>
+            <regexCodePropertyList/>
+            <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                <name>Which</name>
+                <script></script>
+                <triggerType>0</triggerType>
+                <conditonLineDelta>0</conditonLineDelta>
+                <mStayOpen>0</mStayOpen>
+                <mCommand></mCommand>
+                <packageName></packageName>
+                <mFgColor>#ff0000</mFgColor>
+                <mBgColor>#ffff00</mBgColor>
+                <mSoundFile></mSoundFile>
+                <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                <regexCodeList/>
+                <regexCodePropertyList/>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>population</name>
+                    <script>clearWindow(&quot;GUI.Planet.UI.planet_population&quot;)
+GUI.Planet.UI.planet_population:echo(line..&quot;\n&quot;)
+deleteLine()</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string>  PC  civl  scien    mil  offic  BTU  Pop%   PF  Race   Pl#   Name</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>3</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+            </TriggerGroup>
+            <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                <name>Info</name>
+                <script></script>
+                <triggerType>0</triggerType>
+                <conditonLineDelta>0</conditonLineDelta>
+                <mStayOpen>0</mStayOpen>
+                <mCommand></mCommand>
+                <packageName></packageName>
+                <mFgColor>#ff0000</mFgColor>
+                <mBgColor>#ffff00</mBgColor>
+                <mSoundFile></mSoundFile>
+                <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                <regexCodeList/>
+                <regexCodePropertyList/>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>population info</name>
+                    <script>local result = line:gsub(&quot;!@2&quot;,&quot;&quot;)
+
+local num = string.trim(matches[11])
+sys.planet[num] = sys.planet[num] or {}
+
+sys.planet[num].PC = string.trim(matches[2])
+sys.planet[num].civl = string.trim(matches[3])
+sys.planet[num].scien = string.trim(matches[4])
+sys.planet[num].mil = string.trim(matches[5])
+sys.planet[num].offic = string.trim(matches[6])
+sys.planet[num].BTU = string.trim(matches[7])
+sys.planet[num].Pop = string.trim(matches[8])
+sys.planet[num].PF = string.trim(matches[9])
+sys.planet[num].Race = string.trim(matches[10])
+sys.planet[num].Name = string.trim(matches[12])
+
+GUI.Planet.UI.planet_population:echo(result..&quot;\n&quot;)
+deleteLine()</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string>^\!\@2 (.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*)$</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>1</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+            </TriggerGroup>
+        </TriggerGroup>
+        <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+            <name>prompt</name>
+            <script>if sys.scanning then
+  sys.scanning = false
+  sys.scan_to_table()
+  sys.draw_map()
+end</script>
+            <triggerType>0</triggerType>
+            <conditonLineDelta>0</conditonLineDelta>
+            <mStayOpen>0</mStayOpen>
+            <mCommand></mCommand>
+            <packageName></packageName>
+            <mFgColor>#ff0000</mFgColor>
+            <mBgColor>#ffff00</mBgColor>
+            <mSoundFile></mSoundFile>
+            <colorTriggerFgColor>#000000</colorTriggerFgColor>
+            <colorTriggerBgColor>#000000</colorTriggerBgColor>
+            <regexCodeList>
+                <string>^\!\(\[(\d+)\:(\d+)\](.*)$</string>
+            </regexCodeList>
+            <regexCodePropertyList>
+                <integer>1</integer>
+            </regexCodePropertyList>
+        </Trigger>
+        <Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+            <name>------</name>
+            <script>deleteLine()</script>
+            <triggerType>0</triggerType>
+            <conditonLineDelta>0</conditonLineDelta>
+            <mStayOpen>0</mStayOpen>
+            <mCommand></mCommand>
+            <packageName></packageName>
+            <mFgColor>#ff0000</mFgColor>
+            <mBgColor>#ffff00</mBgColor>
+            <mSoundFile></mSoundFile>
+            <colorTriggerFgColor>#000000</colorTriggerFgColor>
+            <colorTriggerBgColor>#000000</colorTriggerBgColor>
+            <regexCodeList>
+                <string>---</string>
+            </regexCodeList>
+            <regexCodePropertyList>
+                <integer>2</integer>
+            </regexCodePropertyList>
+        </Trigger>
+        <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+            <name>login</name>
+            <script>raiseEvent(&quot;Login&quot;)</script>
+            <triggerType>0</triggerType>
+            <conditonLineDelta>0</conditonLineDelta>
+            <mStayOpen>0</mStayOpen>
+            <mCommand></mCommand>
+            <packageName></packageName>
+            <mFgColor>#ff0000</mFgColor>
+            <mBgColor>#ffff00</mBgColor>
+            <mSoundFile></mSoundFile>
+            <colorTriggerFgColor>#000000</colorTriggerFgColor>
+            <colorTriggerBgColor>#000000</colorTriggerBgColor>
+            <regexCodeList>
+                <string>^(\w+) on at (.*)</string>
+            </regexCodeList>
+            <regexCodePropertyList>
+                <integer>1</integer>
+            </regexCodePropertyList>
+        </Trigger>
+        <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+            <name>Capture SR Scan</name>
+            <script>result = matches[4]
+
+sys.map_table[ #sys.map_table + 1 ] = result
+
+sys.scan_to_table()</script>
+            <triggerType>0</triggerType>
+            <conditonLineDelta>0</conditonLineDelta>
+            <mStayOpen>0</mStayOpen>
+            <mCommand></mCommand>
+            <packageName></packageName>
+            <mFgColor>#ff0000</mFgColor>
+            <mBgColor>#ffff00</mBgColor>
+            <mSoundFile></mSoundFile>
+            <colorTriggerFgColor>#000000</colorTriggerFgColor>
+            <colorTriggerBgColor>#000000</colorTriggerBgColor>
+            <regexCodeList>
+                <string>^\!\)S(\d+)\:(\d+)(.*)(\d)(\d)(\d)(\d)$</string>
+            </regexCodeList>
+            <regexCodePropertyList>
+                <integer>1</integer>
+            </regexCodePropertyList>
+        </Trigger>
+        <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+            <name>begin sr scan</name>
+            <script>clearWindow(&quot;GUI.SR.UI.map&quot;)
+sys.map_table = {}</script>
+            <triggerType>0</triggerType>
+            <conditonLineDelta>0</conditonLineDelta>
+            <mStayOpen>0</mStayOpen>
+            <mCommand></mCommand>
+            <packageName></packageName>
+            <mFgColor>#ff0000</mFgColor>
+            <mBgColor>#ffff00</mBgColor>
+            <mSoundFile></mSoundFile>
+            <colorTriggerFgColor>#000000</colorTriggerFgColor>
+            <colorTriggerBgColor>#000000</colorTriggerBgColor>
+            <regexCodeList>
+                <string>!$6</string>
+            </regexCodeList>
+            <regexCodePropertyList>
+                <integer>2</integer>
+            </regexCodePropertyList>
+        </Trigger>
+        <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+            <name>connect</name>
+            <script>enableTrigger(&quot;Capture&quot;)</script>
+            <triggerType>0</triggerType>
+            <conditonLineDelta>0</conditonLineDelta>
+            <mStayOpen>0</mStayOpen>
+            <mCommand></mCommand>
+            <packageName></packageName>
+            <mFgColor>#ff0000</mFgColor>
+            <mBgColor>#ffff00</mBgColor>
+            <mSoundFile></mSoundFile>
+            <colorTriggerFgColor>#000000</colorTriggerFgColor>
+            <colorTriggerBgColor>#000000</colorTriggerBgColor>
+            <regexCodeList>
+                <string>[ INFO ]  - A connection has been established successfully.</string>
+            </regexCodeList>
+            <regexCodePropertyList>
+                <integer>3</integer>
+            </regexCodePropertyList>
+        </Trigger>
+        <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+            <name>Capture</name>
+            <script>selectString(line,1)
+copy()
+appendBuffer(&quot;GUI.Console&quot;)</script>
+            <triggerType>0</triggerType>
+            <conditonLineDelta>0</conditonLineDelta>
+            <mStayOpen>0</mStayOpen>
+            <mCommand></mCommand>
+            <packageName></packageName>
+            <mFgColor>#ff0000</mFgColor>
+            <mBgColor>#ffff00</mBgColor>
+            <mSoundFile></mSoundFile>
+            <colorTriggerFgColor>#000000</colorTriggerFgColor>
+            <colorTriggerBgColor>#000000</colorTriggerBgColor>
+            <regexCodeList>
+                <string>(.*)</string>
+            </regexCodeList>
+            <regexCodePropertyList>
+                <integer>1</integer>
+            </regexCodePropertyList>
+        </Trigger>
+        <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+            <name>Home Planet</name>
+            <script>sys.home_planet = matches[2]</script>
+            <triggerType>0</triggerType>
+            <conditonLineDelta>0</conditonLineDelta>
+            <mStayOpen>0</mStayOpen>
+            <mCommand></mCommand>
+            <packageName></packageName>
+            <mFgColor>#ff0000</mFgColor>
+            <mBgColor>#ffff00</mBgColor>
+            <mSoundFile></mSoundFile>
+            <colorTriggerFgColor>#000000</colorTriggerFgColor>
+            <colorTriggerBgColor>#000000</colorTriggerBgColor>
+            <regexCodeList>
+                <string>!*SHHome planet: (\d+)$</string>
+            </regexCodeList>
+            <regexCodePropertyList>
+                <integer>1</integer>
+            </regexCodePropertyList>
+        </Trigger>
+    </TriggerPackage>
+    <TimerPackage/>
+    <AliasPackage>
+        <AliasGroup isActive="yes" isFolder="yes">
+            <name>run-lua-code-v4</name>
+            <script></script>
+            <command></command>
+            <packageName>run-lua-code-v4</packageName>
+            <regex></regex>
+            <Alias isActive="yes" isFolder="no">
+                <name>run lua code</name>
+                <script>local f,e = loadstring(&quot;return &quot;..matches[2])
+if not f then
+	f,e = assert(loadstring(matches[2]))
+end
+
+local r = f()
+if r ~= nil then display(r) end</script>
+                <command></command>
+                <packageName></packageName>
+                <regex>^lua (.*)$</regex>
+            </Alias>
+        </AliasGroup>
+        <Alias isActive="yes" isFolder="no">
+            <name>SR Scan</name>
+            <script>sys.scanning = true
+send(&quot;status&quot;)
+send(&quot;scan;sr;&quot;..sys.home_planet..&quot;p&quot;)</script>
+            <command></command>
+            <packageName></packageName>
+            <regex>^gui scan$</regex>
+        </Alias>
+    </AliasPackage>
+    <ActionPackage/>
+    <ScriptPackage>
+        <ScriptGroup isActive="yes" isFolder="yes">
+            <name>CSSman</name>
+            <packageName>CSSman</packageName>
+            <script></script>
+            <eventHandlerList/>
+            <Script isActive="yes" isFolder="no">
+                <name>CSSMan</name>
+                <packageName></packageName>
+                <script>-- CSSMan by Vadi. Public domain.
+
+CSSMan = {}
+CSSMan.__index = CSSMan
+
+function CSSMan.new(stylesheet)
+  local obj  = { stylesheet = {} }
+  setmetatable(obj,CSSMan)
+  local trim = string.trim
+
+  assert(type(stylesheet) == &quot;string&quot;, &quot;CSSMan.new: no stylesheet provided. A possible error is that you might have used CSSMan.new, not CSSMan:new&quot;)
+
+  for line in stylesheet:gmatch(&quot;[^\r\n]+&quot;) do
+    local attribute, value = line:match(&quot;^(.-):(.-);$&quot;)
+    if attribute and value then
+      attribute, value = trim(attribute), trim(value)
+      obj.stylesheet[attribute] = value
+    end
+  end
+
+  return obj
+end
+
+function CSSMan:set(key, value)
+  self.stylesheet[key] = value
+end
+
+function CSSMan:get(key)
+  return self.stylesheet[key]
+end
+
+function CSSMan:getCSS(key)
+  local lines, concat = {}, table.concat
+  for k,v in pairs(self.stylesheet) do lines[#lines+1] = concat({k,&quot;: &quot;, v, &quot;;&quot;}) end
+  return concat(lines, &quot;\n&quot;)
+end
+
+function CSSMan:gettable()
+  return self.stylesheet
+end
+
+function CSSMan:settable(tbl)
+  assert(type(tbl) == &quot;table&quot;, &quot;CSSMan:settable: table expected, got &quot;..type(tbl))
+
+  self.stylesheet = tbl
+end</script>
+                <eventHandlerList/>
+            </Script>
+        </ScriptGroup>
+        <ScriptGroup isActive="yes" isFolder="yes">
+            <name>sys</name>
+            <packageName></packageName>
+            <script>sys = sys or {}</script>
+            <eventHandlerList/>
+            <Script isActive="yes" isFolder="no">
+                <name>ship</name>
+                <packageName></packageName>
+                <script>sys.ship = sys.ship or {}</script>
+                <eventHandlerList/>
+            </Script>
+            <Script isActive="yes" isFolder="no">
+                <name>planet</name>
+                <packageName></packageName>
+                <script>sys.planet = sys.planet or {}</script>
+                <eventHandlerList/>
+            </Script>
+            <Script isActive="yes" isFolder="no">
+                <name>sys.login</name>
+                <packageName></packageName>
+                <script>function sys.login()
+  local list = {&quot;cargo&quot;,&quot;config&quot;,&quot;status&quot;,&quot;comp&quot;,&quot;engine&quot;,&quot;lifesup&quot;,&quot;sens&quot;,&quot;telep&quot;,&quot;weap&quot;}
+  for k,v in pairs(list) do
+    send(&quot;ship&quot;)
+    send(v)
+  end
+end</script>
+                <eventHandlerList>
+                    <string>Login</string>
+                </eventHandlerList>
+            </Script>
+        </ScriptGroup>
+        <ScriptGroup isActive="yes" isFolder="yes">
+            <name>GUI</name>
+            <packageName></packageName>
+            <script>GUI = GUI or {}</script>
+            <eventHandlerList/>
+            <Script isActive="yes" isFolder="no">
+                <name>StyleSheets</name>
+                <packageName></packageName>
+                <script>GUI.ButtonCSS = CSSMan.new([[
+  background-color: blue;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+]])
+
+GUI.Font_Family = &quot;arialn&quot;
+
+GUI.Font_Size = 12
+
+GUI.Font_Color = &quot;white&quot;</script>
+                <eventHandlerList/>
+            </Script>
+            <Script isActive="yes" isFolder="no">
+                <name>Background</name>
+                <packageName></packageName>
+                <script>GUI.Background = Geyser.Label:new({
+  name = &quot;GUI.Background&quot;,
+  x = 0, y = 0,
+  width = &quot;100%&quot;,
+  height = &quot;100%&quot;,
+})
+GUI.BackgroundCSS = CSSMan.new([[
+  background-color: rgb(241,241,241);
+]])
+GUI.Background:setStyleSheet(GUI.BackgroundCSS:getCSS())</script>
+                <eventHandlerList/>
+            </Script>
+            <Script isActive="yes" isFolder="no">
+                <name>Main Console</name>
+                <packageName></packageName>
+                <script>GUI.Console = Geyser.MiniConsole:new({
+
+  name = &quot;GUI.Console&quot;,
+  x = &quot;25%&quot;,
+  y = &quot;2%&quot;,
+  width = &quot;50%&quot;,
+  height = &quot;96%&quot;,
+  color = &quot;black&quot;,
+
+}, GUI.Background )</script>
+                <eventHandlerList/>
+            </Script>
+            <Script isActive="yes" isFolder="no">
+                <name>Top Logo</name>
+                <packageName></packageName>
+                <script>GUI.Logo_Stripe = Geyser.Label:new({
+  name = &quot;GUI.Logo_Stripe&quot;,
+  x = &quot;25%&quot;, y = &quot;2%&quot;,
+  width = &quot;50%&quot;,
+  height = &quot;2.5%&quot;,
+
+}, GUI.Background )
+
+GUI.Logo_Stripe:setStyleSheet([[
+  background-color: rgb(150,150,150);
+]])
+
+GUI.Logo_Background = Geyser.Label:new({
+  name = &quot;GUI.Logo_Background&quot;,
+  x = &quot;35%&quot;, y = &quot;0%&quot;,
+  width = &quot;30%&quot;,
+  height = &quot;5%&quot;,
+
+}, GUI.Background )
+
+
+local radius = GUI.Logo_Background:get_height() / 1.05
+
+GUI.Logo_Background:setStyleSheet([[
+  background-color: rgb(240,240,240);
+  border-bottom-left-radius: ]].. radius ..[[px;
+  border-bottom-right-radius: ]].. radius ..[[px;
+]])
+
+local styleSheet1 = CSSMan.new([[
+  background-color: rgb(240,240,240);
+  margin: 4px;
+  border-radius: 5px;
+  qproperty-alignment: AlignCenter;
+]])
+
+local styleSheet2 = CSSMan.new([[
+  background-color: rgb(200,200,200);
+  margin: 4px;
+  border-radius: 5px;
+  qproperty-alignment: AlignCenter;
+]])
+
+GUI.Logo_Ships = Geyser.Label:new({
+  name = &quot;GUI.Logo_Ships&quot;,
+  x = 0, y = 0,
+  width = &quot;10%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.Logo_Stripe )
+
+local radius = GUI.Logo_Ships:get_height() / 1.05
+
+GUI.Logo_Ships:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.Logo_Ships&quot;,&quot;Button_onEnter&quot;, &quot;Ships&quot;)
+setLabelOnLeave(&quot;GUI.Logo_Ships&quot;,&quot;Button_onLeave&quot;, &quot;Ships&quot;)
+
+GUI.Logo_Ships:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;SHIPS&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.Logo_Planets = Geyser.Label:new({
+  name = &quot;GUI.Logo_Planets&quot;,
+  x = &quot;10%&quot;, y = 0,
+  width = &quot;10%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.Logo_Stripe )
+
+local radius = GUI.Logo_Planets:get_height() / 1.05
+
+GUI.Logo_Planets:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.Logo_Planets&quot;,&quot;Button_onEnter&quot;, &quot;Planets&quot;)
+setLabelOnLeave(&quot;GUI.Logo_Planets&quot;,&quot;Button_onLeave&quot;, &quot;Planets&quot;)
+
+GUI.Logo_Planets:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;PLANETS&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.Logo_Options = Geyser.Label:new({
+  name = &quot;GUI.Logo_Options&quot;,
+  x = &quot;-10%&quot;, y = 0,
+  width = &quot;10%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.Logo_Stripe )
+
+local radius = GUI.Logo_Options:get_height() / 1.05
+
+GUI.Logo_Options:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.Logo_Options&quot;,&quot;Button_onEnter&quot;, &quot;Options&quot;)
+setLabelOnLeave(&quot;GUI.Logo_Options&quot;,&quot;Button_onLeave&quot;, &quot;Options&quot;)
+
+GUI.Logo_Options:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;OPTIONS&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.Logo_Maps = Geyser.Label:new({
+  name = &quot;GUI.Logo_Maps&quot;,
+  x = &quot;-20%&quot;, y = 0,
+  width = &quot;10%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.Logo_Stripe )
+
+local radius = GUI.Logo_Maps:get_height() / 1.05
+
+GUI.Logo_Maps:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.Logo_Maps&quot;,&quot;Button_onEnter&quot;, &quot;Maps&quot;)
+setLabelOnLeave(&quot;GUI.Logo_Maps&quot;,&quot;Button_onLeave&quot;, &quot;Maps&quot;)
+
+GUI.Logo_Maps:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;MAPS&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.Logo_Text = Geyser.Label:new({
+  name = &quot;GUI.Logo_Text&quot;,
+  x = &quot;40%&quot;, y = &quot;0%&quot;,
+  width = &quot;20%&quot;,
+  height = &quot;5%&quot;,
+
+}, GUI.Background )
+
+GUI.Logo_Text:setStyleSheet([[
+  background-color: transparent;
+  font-family: Morpheus;
+]])
+
+local font_size = math.floor( GUI.Logo_Text:get_height() / 1.5 )
+
+GUI.Logo_Text:echo([[&lt;b&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;span style=&quot;font-size:]].. font_size ..[[px&quot;&gt;&lt;center&gt;IMPERIUM&lt;/center&gt;&lt;/span&gt;]])
+
+function Button_onEnter(which)
+  GUI[&quot;Logo_&quot;..which]:echo([[&lt;b&gt;&lt;i&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;]]..which..[[&lt;/center&gt;&lt;/span&gt;]])
+end
+
+function Button_onLeave(which)
+  GUI[&quot;Logo_&quot;..which]:setStyleSheet( styleSheet1:getCSS() )
+  GUI[&quot;Logo_&quot;..which]:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;]]..which..[[&lt;/center&gt;&lt;/span&gt;]])
+end</script>
+                <eventHandlerList/>
+            </Script>
+            <ScriptGroup isActive="yes" isFolder="yes">
+                <name>Ship</name>
+                <packageName></packageName>
+                <script>GUI.Ship = GUI.Ship or {}</script>
+                <eventHandlerList/>
+                <Script isActive="yes" isFolder="no">
+                    <name>Interface</name>
+                    <packageName></packageName>
+                    <script>GUI.Ship.UI = {}
+ui = GUI.Ship.UI
+ui.back = Geyser.Label:new({
+  name= &quot;GUI.Ship.UI.back&quot;,
+  x = &quot;45%&quot;, y = &quot;10%&quot;,
+  width = &quot;50%&quot;, height = 300
+})
+ui.back:setStyleSheet([[
+  background-color: black;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  qproperty-alignment: AlignTop;
+  font-family: Bitstream Vera Sans Mono;
+]])
+
+ui.buttons = Geyser.VBox:new({
+  name = &quot;GUI.Ship.UI.buttons&quot;,
+  x = 2, y = 2,
+  width = 100,
+  height = 128 * 2,
+},ui.back)
+
+local buttons = {&quot;SHIP REPORT&quot;,&quot;cargo&quot;,&quot;config&quot;,&quot;status&quot;,&quot;comp&quot;,&quot;engine&quot;,&quot;lifesup&quot;,&quot;sens&quot;,&quot;telep&quot;,&quot;weap&quot;}
+local button_styleSheet = CSSMan.new([[
+  background-color: black;
+  qproperty-alignment: AlignLeft;
+  font-family: Bitstream Vera Sans Mono;
+]])
+local header_styleSheet = CSSMan.new([[
+  background-color: black;
+  margin-top: 2px;
+]])
+for k,v in pairs(buttons) do
+  ui[v..&quot;_button&quot;] = Geyser.Label:new({
+    name = &quot;GUI.Ship.UI.&quot;..v..&quot;_button&quot;,
+  },ui.buttons)
+  if v == &quot;SHIP REPORT&quot; then
+    ui[v..&quot;_button&quot;]:setStyleSheet( header_styleSheet:getCSS() )
+  else
+    ui[v..&quot;_button&quot;]:setClickCallback(&quot;GUI.Ship.UI.click_button&quot;, v )
+    ui[v..&quot;_button&quot;]:setStyleSheet( button_styleSheet:getCSS() )
+    ui[&quot;ship_&quot;..v] = Geyser.MiniConsole:new({
+      name = &quot;GUI.Ship.UI.ship_&quot;..v,
+      x = 102, y = 4, width = ui.back:get_width()-104, height = ui.back:get_height()-8,
+    },ui.back)
+    setMiniConsoleFontSize(&quot;GUI.Ship.UI.ship_&quot;..v, 10)
+    setBackgroundColor(&quot;GUI.Ship.UI.ship_&quot;..v,0,0,0,0)
+    ui[&quot;ship_&quot;..v]:hide()
+    ui.ship_cargo:show()
+  end
+  ui[v..&quot;_button&quot;]:echo([[&lt;span style=&quot;font-size:10pt&quot;&gt;]]..v)
+
+end
+
+GUI.Ship.UI = ui
+
+ui.back:hide()</script>
+                    <eventHandlerList/>
+                </Script>
+                <ScriptGroup isActive="yes" isFolder="yes">
+                    <name>Callback Functions</name>
+                    <packageName></packageName>
+                    <script>-------------------------------------------------
+--         Put your Lua functions here.        --
+--                                             --
+-- Note that you can also use external Scripts --
+-------------------------------------------------
+</script>
+                    <eventHandlerList/>
+                    <Script isActive="yes" isFolder="no">
+                        <name>GUI.Ship.UI.click_button</name>
+                        <packageName></packageName>
+                        <script>function GUI.Ship.UI.click_button( which )
+  local button_styleSheet = CSSMan.new([[
+  background-color: black;
+  border-color: green;
+  border-width: 2px;
+  border-style: solid;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  margin: 1px;
+  qproperty-alignment: AlignLeft;
+  font-family: Bitstream Vera Sans Mono;
+  ]])
+  GUI.Ship.UI.hide_all()
+  GUI.Ship.UI[&quot;ship_&quot;..which]:show()
+  GUI.Ship.UI[which..&quot;_button&quot;]:setStyleSheet( button_styleSheet:getCSS() )
+
+end
+
+function GUI.Ship.UI.hide_all()
+  local button_styleSheet = CSSMan.new([[
+  background-color: black;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  margin: 1px;
+  qproperty-alignment: AlignLeft;
+  font-family: Bitstream Vera Sans Mono;
+  ]])
+  local buttons = {&quot;cargo&quot;,&quot;config&quot;,&quot;status&quot;,&quot;comp&quot;,&quot;engine&quot;,&quot;lifesup&quot;,&quot;sens&quot;,&quot;telep&quot;,&quot;weap&quot;}
+  for k,v in pairs(buttons) do
+    GUI.Ship.UI[ &quot;ship_&quot;..v ]:hide()
+    GUI.Ship.UI[v..&quot;_button&quot;]:setStyleSheet( button_styleSheet:getCSS() )
+  end
+end</script>
+                        <eventHandlerList/>
+                    </Script>
+                </ScriptGroup>
+            </ScriptGroup>
+            <ScriptGroup isActive="yes" isFolder="yes">
+                <name>Short Range Scan Map</name>
+                <packageName></packageName>
+                <script>GUI.SR = GUI.SR or {}</script>
+                <eventHandlerList/>
+                <Script isActive="yes" isFolder="no">
+                    <name>Interface</name>
+                    <packageName></packageName>
+                    <script>GUI.SR.UI = {}
+ui = GUI.SR.UI
+
+local width, height = getMainWindowSize()
+ui.back = Geyser.Label:new({
+  name= &quot;GUI.SR.UI.back&quot;,
+  x = &quot;45%&quot;, y = 2,
+  width = 575, height = height - 4
+})
+ui.back:setStyleSheet([[
+  background-color: black;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  qproperty-alignment: AlignTop;
+  font-family: Bitstream Vera Sans Mono;
+]])
+ui.back:echo(&quot;Short Range Scan&quot;)
+
+ui.map = Geyser.MiniConsole:new({
+  name = &quot;GUI.SR.UI.map&quot;,
+  x = 2, y = 22, width = ui.back:get_width()-4, height = ui.back:get_height()-24,
+},ui.back)
+setMiniConsoleFontSize(&quot;GUI.SR.UI.map&quot;, 10)
+setBackgroundColor(&quot;GUI.SR.UI.map&quot;,0,0,0,0)
+
+ui.back:hide()</script>
+                    <eventHandlerList/>
+                </Script>
+            </ScriptGroup>
+            <ScriptGroup isActive="yes" isFolder="yes">
+                <name>Planet</name>
+                <packageName></packageName>
+                <script>GUI.Planet = GUI.Planet or {}</script>
+                <eventHandlerList/>
+                <Script isActive="yes" isFolder="no">
+                    <name>Interface</name>
+                    <packageName></packageName>
+                    <script>GUI.Planet.UI = {}
+ui = GUI.Planet.UI
+ui.back = Geyser.Label:new({
+  name= &quot;GUI.Planet.UI.back&quot;,
+  x = &quot;45%&quot;, y = 330,
+  width = &quot;50%&quot;, height = 300
+})
+ui.back:setStyleSheet([[
+  background-color: black;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  qproperty-alignment: AlignTop;
+  font-family: Bitstream Vera Sans Mono;
+]])
+
+ui.buttons = Geyser.VBox:new({
+  name = &quot;GUI.Planet.UI.buttons&quot;,
+  x = 2, y = 2,
+  width = 100,
+  height = 128,
+},ui.back)
+
+local buttons = {&quot;PLANET INFO&quot;,&quot;population&quot;,&quot;geology&quot;,&quot;production&quot;,&quot;items&quot;}
+local button_styleSheet = CSSMan.new([[
+  background-color: black;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  margin: 1px;
+  qproperty-alignment: AlignBottom;
+  font-family: Bitstream Vera Sans Mono;
+]])
+local header_styleSheet = CSSMan.new([[
+  background-color: black;
+  margin-top: 2px;
+]])
+for k,v in pairs(buttons) do
+  ui[v..&quot;_button&quot;] = Geyser.Label:new({
+    name = &quot;GUI.Planet.UI.&quot;..v..&quot;_button&quot;,
+  },ui.buttons)
+  if v == &quot;PLANET INFO&quot; then
+    ui[v..&quot;_button&quot;]:setStyleSheet( header_styleSheet:getCSS() )
+  else
+    ui[v..&quot;_button&quot;]:setClickCallback(&quot;GUI.Planet.UI.click_button&quot;, v )
+    ui[v..&quot;_button&quot;]:setStyleSheet( button_styleSheet:getCSS() )
+    ui[&quot;planet_&quot;..v] = Geyser.MiniConsole:new({
+      name = &quot;GUI.Planet.UI.planet_&quot;..v,
+      x = 102, y = 4, width = ui.back:get_width()-104, height = ui.back:get_height()-8,
+    },ui.back)
+    setMiniConsoleFontSize(&quot;GUI.Planet.UI.planet_&quot;..v, 10)
+    setBackgroundColor(&quot;GUI.Planet.UI.planet_&quot;..v,0,0,0,0)
+    ui[&quot;planet_&quot;..v]:hide()
+    ui.planet_population:show()
+  end
+  ui[v..&quot;_button&quot;]:echo([[&lt;span style=&quot;font-size:10pt&quot;&gt;]]..v)
+
+end
+
+GUI.Planet.UI = ui
+
+ui.back:hide()</script>
+                    <eventHandlerList/>
+                </Script>
+                <ScriptGroup isActive="yes" isFolder="yes">
+                    <name>Callback Functions</name>
+                    <packageName></packageName>
+                    <script>-------------------------------------------------
+--         Put your Lua functions here.        --
+--                                             --
+-- Note that you can also use external Scripts --
+-------------------------------------------------
+</script>
+                    <eventHandlerList/>
+                    <Script isActive="yes" isFolder="no">
+                        <name>GUI.Planet.UI.click_button</name>
+                        <packageName></packageName>
+                        <script>function GUI.Planet.UI.click_button( which )
+  local button_styleSheet = CSSMan.new([[
+  background-color: black;
+  border-color: green;
+  border-width: 2px;
+  border-style: solid;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  margin: 1px;
+  qproperty-alignment: AlignLeft;
+  font-family: Bitstream Vera Sans Mono;
+]])
+  GUI.Planet.UI.hide_all()
+  GUI.Planet.UI[&quot;planet_&quot;..which]:show()
+  GUI.Planet.UI[which..&quot;_button&quot;]:setStyleSheet( button_styleSheet:getCSS() )
+
+end
+
+function GUI.Planet.UI.hide_all()
+  local button_styleSheet = CSSMan.new([[
+  background-color: black;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  margin: 1px;
+  qproperty-alignment: AlignLeft;
+  font-family: Bitstream Vera Sans Mono;
+]])
+  local buttons = {&quot;population&quot;,&quot;geology&quot;,&quot;production&quot;,&quot;items&quot;}
+  for k,v in pairs(buttons) do
+    GUI.Planet.UI[ &quot;planet_&quot;..v ]:hide()
+    GUI.Planet.UI[v..&quot;_button&quot;]:setStyleSheet( button_styleSheet:getCSS() )
+  end
+end</script>
+                        <eventHandlerList/>
+                    </Script>
+                </ScriptGroup>
+                <Script isActive="yes" isFolder="no">
+                    <name>Ships Window</name>
+                    <packageName></packageName>
+                    <script>GUI.Ships_Window = Geyser.Label:new({
+  name = &quot;GUI.Ships_Window&quot;,
+  x = &quot;1%&quot;, y = &quot;2%&quot;,
+  width = &quot;23%&quot;,
+  height = &quot;47%&quot;,
+
+}, GUI.Background )
+
+GUI.Ships_Window:setStyleSheet([[
+  background-color: rgb( 200, 200, 200);
+]])
+</script>
+                    <eventHandlerList/>
+                </Script>
+                <Script isActive="yes" isFolder="no">
+                    <name>Planets Window</name>
+                    <packageName></packageName>
+                    <script>GUI.Planets_Window = Geyser.Label:new({
+  name = &quot;GUI.Planets_Window&quot;,
+  x = &quot;1%&quot;, y = &quot;51%&quot;,
+  width = &quot;23%&quot;,
+  height = &quot;47%&quot;,
+
+}, GUI.Background )
+
+GUI.Planets_Window:setStyleSheet([[
+  background-color: rgb( 200, 200, 200);
+]])</script>
+                    <eventHandlerList/>
+                </Script>
+                <Script isActive="yes" isFolder="no">
+                    <name>Ships Logo</name>
+                    <packageName></packageName>
+                    <script>GUI.SLogo_Stripe = Geyser.Label:new({
+  name = &quot;GUI.SLogo_Stripe&quot;,
+  x = &quot;1%&quot;, y = &quot;51%&quot;,
+  width = &quot;23%&quot;,
+  height = &quot;2.5%&quot;,
+
+}, GUI.Background )
+
+GUI.SLogo_Stripe:setStyleSheet([[
+  background-color: rgb(150,150,150);
+]])
+
+GUI.SLogo_Stripe2 = Geyser.Label:new({
+  name = &quot;GUI.SLogo_Stripe2&quot;,
+  x = &quot;1%&quot;, y = &quot;53.5%&quot;,
+  width = &quot;23%&quot;,
+  height = &quot;2.5%&quot;,
+
+}, GUI.Background )
+
+GUI.SLogo_Stripe2:setStyleSheet([[
+  background-color: rgb(150,150,150);
+]])
+
+GUI.SLogo_Background = Geyser.Label:new({
+  name = &quot;GUI.SLogo_Background&quot;,
+  x = &quot;7.5%&quot;, y = &quot;49.1%&quot;,
+  width = &quot;10%&quot;,
+  height = &quot;5%&quot;,
+
+}, GUI.Background )
+
+
+local radius = GUI.SLogo_Background:get_height() / 1.05
+
+GUI.SLogo_Background:setStyleSheet([[
+  background-color: rgb(240,240,240);
+  border-bottom-left-radius: ]].. radius ..[[px;
+  border-bottom-right-radius: ]].. radius ..[[px;
+]])
+
+
+local styleSheet1 = CSSMan.new([[
+  background-color: rgb(240,240,240);
+  margin: 4px;
+  border-radius: 5px;
+  qproperty-alignment: AlignCenter;
+]])
+
+local styleSheet2 = CSSMan.new([[
+  background-color: rgb(200,200,200);
+  margin: 4px;
+  border-radius: 5px;
+  qproperty-alignment: AlignCenter;
+]])
+
+GUI.SLogo_BItems = Geyser.Label:new({
+  name = &quot;GUI.SLogo_BItems&quot;,
+  x = 0, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.SLogo_Stripe )
+
+local radius = GUI.SLogo_BItems:get_height() / 1.05
+
+GUI.SLogo_BItems:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.SLogo_BItems&quot;,&quot;SButton_onEnter&quot;, &quot;BItems&quot;)
+setLabelOnLeave(&quot;GUI.SLogo_BItems&quot;,&quot;SButton_onLeave&quot;, &quot;BItems&quot;)
+
+GUI.SLogo_BItems:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Big Items&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.SLogo_Weapons = Geyser.Label:new({
+  name = &quot;GUI.SLogo_Weapons&quot;,
+  x = &quot;-25%&quot;, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.SLogo_Stripe )
+
+local radius = GUI.SLogo_Weapons:get_height() / 1.05
+
+GUI.SLogo_Weapons:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.SLogo_Weapons&quot;,&quot;SButton_onEnter&quot;, &quot;Weapons&quot;)
+setLabelOnLeave(&quot;GUI.SLogo_Weapons&quot;,&quot;SButton_onLeave&quot;, &quot;Weapons&quot;)
+
+GUI.SLogo_Weapons:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Weapons&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.SLogo_Cargo = Geyser.Label:new({
+  name = &quot;GUI.SLogo_Cargo&quot;,
+  x = 0, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.SLogo_Stripe2 )
+
+local radius = GUI.SLogo_Cargo:get_height() / 1.05
+
+GUI.SLogo_Cargo:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.SLogo_Cargo&quot;,&quot;SButton_onEnter&quot;, &quot;Cargo&quot;)
+setLabelOnLeave(&quot;GUI.SLogo_Cargo&quot;,&quot;SButton_onLeave&quot;, &quot;Cargo&quot;)
+
+GUI.SLogo_Cargo:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Cargo&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.SLogo_Config = Geyser.Label:new({
+  name = &quot;GUI.SLogo_Config&quot;,
+  x = &quot;-25%&quot;, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.SLogo_Stripe2 )
+
+local radius = GUI.SLogo_Config:get_height() / 1.05
+
+GUI.SLogo_Config:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.SLogo_Config&quot;,&quot;SButton_onEnter&quot;, &quot;Config&quot;)
+setLabelOnLeave(&quot;GUI.SLogo_Config&quot;,&quot;SButton_onLeave&quot;, &quot;Config&quot;)
+
+GUI.SLogo_Config:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Config&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.SLogo_BStripe = Geyser.Label:new({
+  name = &quot;GUI.SLogo_BStripe&quot;,
+  x = &quot;1%&quot;, y = &quot;95.5%&quot;,
+  width = &quot;23%&quot;,
+  height = &quot;2.5%&quot;,
+
+}, GUI.Background )
+
+GUI.SLogo_BStripe:setStyleSheet([[
+  background-color: rgb(150,150,150);
+]])
+
+GUI.SLogo_Teleport = Geyser.Label:new({
+  name = &quot;GUI.SLogo_Teleport&quot;,
+  x = 0, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.SLogo_BStripe )
+
+local radius = GUI.SLogo_Teleport:get_height() / 1.05
+
+GUI.SLogo_Teleport:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.SLogo_Teleport&quot;,&quot;SButton_onEnter&quot;, &quot;Teleport&quot;)
+setLabelOnLeave(&quot;GUI.SLogo_Teleport&quot;,&quot;SButton_onLeave&quot;, &quot;Teleport&quot;)
+
+GUI.SLogo_Teleport:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Teleport&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.SLogo_LifeSup = Geyser.Label:new({
+  name = &quot;GUI.SLogo_LifeSup&quot;,
+  x = &quot;-25%&quot;, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.SLogo_BStripe )
+
+local radius = GUI.SLogo_LifeSup:get_height() / 1.05
+
+GUI.SLogo_LifeSup:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.SLogo_LifeSup&quot;,&quot;SButton_onEnter&quot;, &quot;LifeSup&quot;)
+setLabelOnLeave(&quot;GUI.SLogo_LifeSup&quot;,&quot;SButton_onLeave&quot;, &quot;LifeSup&quot;)
+
+GUI.SLogo_LifeSup:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Life Support&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.SLogo_Sensors = Geyser.Label:new({
+  name = &quot;GUI.SLogo_Sensors&quot;,
+  x = &quot;37.5%&quot;, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.SLogo_BStripe )
+
+local radius = GUI.SLogo_Sensors:get_height() / 1.05
+
+GUI.SLogo_Sensors:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.SLogo_Sensors&quot;,&quot;SButton_onEnter&quot;, &quot;Sensors&quot;)
+setLabelOnLeave(&quot;GUI.SLogo_Sensors&quot;,&quot;SButton_onLeave&quot;, &quot;Sensors&quot;)
+
+GUI.SLogo_Sensors:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Sensors&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.SLogo_BStripe2 = Geyser.Label:new({
+  name = &quot;GUI.SLogo_BStripe2&quot;,
+  x = &quot;1%&quot;, y = &quot;93.1%&quot;,
+  width = &quot;23%&quot;,
+  height = &quot;2.5%&quot;,
+
+}, GUI.Background )
+
+GUI.SLogo_BStripe2:setStyleSheet([[
+  background-color: rgb(150,150,150);
+]])
+
+GUI.SLogo_Engine = Geyser.Label:new({
+  name = &quot;GUI.SLogo_Engine&quot;,
+  x = 0, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.SLogo_BStripe2 )
+
+local radius = GUI.SLogo_Engine:get_height() / 1.05
+
+GUI.SLogo_Engine:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.SLogo_Engine&quot;,&quot;SButton_onEnter&quot;, &quot;Engine&quot;)
+setLabelOnLeave(&quot;GUI.SLogo_Engine&quot;,&quot;SButton_onLeave&quot;, &quot;Engine&quot;)
+
+GUI.SLogo_Engine:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Engine&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.SLogo_Computer = Geyser.Label:new({
+  name = &quot;GUI.SLogo_Computer&quot;,
+  x = &quot;-25%&quot;, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.SLogo_BStripe2 )
+
+local radius = GUI.SLogo_Computer:get_height() / 1.05
+
+GUI.SLogo_Computer:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.SLogo_Computer&quot;,&quot;SButton_onEnter&quot;, &quot;Computer&quot;)
+setLabelOnLeave(&quot;GUI.SLogo_Computer&quot;,&quot;SButton_onLeave&quot;, &quot;Computer&quot;)
+
+GUI.SLogo_Computer:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Computer&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.SLogo_Status = Geyser.Label:new({
+  name = &quot;GUI.SLogo_Status&quot;,
+  x = &quot;37.5%&quot;, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.SLogo_BStripe2 )
+
+local radius = GUI.SLogo_Status:get_height() / 1.05
+
+GUI.SLogo_Status:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.SLogo_Status&quot;,&quot;SButton_onEnter&quot;, &quot;Status&quot;)
+setLabelOnLeave(&quot;GUI.SLogo_Status&quot;,&quot;SButton_onLeave&quot;, &quot;Status&quot;)
+
+GUI.SLogo_Status:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Status&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.SLogo_Text = Geyser.Label:new({
+  name = &quot;GUI.SLogo_Text&quot;,
+  x = &quot;2.5%&quot;, y = &quot;50%&quot;,
+  width = &quot;20%&quot;,
+  height = &quot;5%&quot;,
+
+}, GUI.Background )
+
+GUI.SLogo_Text:setStyleSheet([[
+  background-color: transparent;
+]])
+
+local font_size = math.floor( GUI.SLogo_Text:get_height() / 1.75 )
+
+GUI.SLogo_Text:echo([[&lt;span style=&quot;color:black&quot;&gt;&lt;span style=&quot;font-size:]].. font_size ..[[px&quot;&gt;&lt;center&gt;SHIPS&lt;/center&gt;&lt;/span&gt;]])
+
+function SButton_onEnter(which)
+  local t = {
+    BItems = &quot;Big Items&quot;,
+    Weapons = &quot;Weapons&quot;,
+    LifeSup = &quot;Life Support&quot;,
+    Teleport = &quot;Teleport&quot;,
+    Sensors = &quot;Sensors&quot;,
+    Engine = &quot;Engine&quot;,
+    Computer = &quot;Computer&quot;,
+    Status = &quot;Status&quot;,
+    Config = &quot;Config&quot;,
+    Cargo = &quot;Cargo&quot;,
+  }
+  GUI[&quot;SLogo_&quot;..which]:echo([[&lt;b&gt;&lt;i&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;]]..t[which]..[[&lt;/center&gt;&lt;/span&gt;]])
+end
+
+function SButton_onLeave(which)
+  local t = {
+    BItems = &quot;Big Items&quot;,
+    Weapons = &quot;Weapons&quot;,
+    LifeSup = &quot;Life Support&quot;,
+    Teleport = &quot;Teleport&quot;,
+    Sensors = &quot;Sensors&quot;,
+    Engine = &quot;Engine&quot;,
+    Computer = &quot;Computer&quot;,
+    Status = &quot;Status&quot;,
+    Config = &quot;Config&quot;,
+    Cargo = &quot;Cargo&quot;,
+  }
+  GUI[&quot;SLogo_&quot;..which]:setStyleSheet( styleSheet1:getCSS() )
+  GUI[&quot;SLogo_&quot;..which]:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;]]..t[which]..[[&lt;/center&gt;&lt;/span&gt;]])
+end</script>
+                    <eventHandlerList/>
+                </Script>
+                <Script isActive="yes" isFolder="no">
+                    <name>Planets Logo</name>
+                    <packageName></packageName>
+                    <script>GUI.PLogo_Stripe = Geyser.Label:new({
+  name = &quot;GUI.PLogo_Stripe&quot;,
+  x = &quot;1%&quot;, y = &quot;2%&quot;,
+  width = &quot;23%&quot;,
+  height = &quot;2.5%&quot;,
+
+}, GUI.Background )
+
+GUI.PLogo_Stripe:setStyleSheet([[
+  background-color: rgb(150,150,150);
+]])
+
+GUI.PLogo_Background = Geyser.Label:new({
+  name = &quot;GUI.PLogo_Background&quot;,
+  x = &quot;7.5%&quot;, y = &quot;0%&quot;,
+  width = &quot;10%&quot;,
+  height = &quot;5%&quot;,
+
+}, GUI.Background )
+
+
+local radius = GUI.PLogo_Background:get_height() / 1.05
+
+GUI.PLogo_Background:setStyleSheet([[
+  background-color: rgb(240,240,240);
+  border-bottom-left-radius: ]].. radius ..[[px;
+  border-bottom-right-radius: ]].. radius ..[[px;
+]])
+
+
+local styleSheet1 = CSSMan.new([[
+  background-color: rgb(240,240,240);
+  margin: 4px;
+  border-radius: 5px;
+  qproperty-alignment: AlignCenter;
+]])
+
+local styleSheet2 = CSSMan.new([[
+  background-color: rgb(200,200,200);
+  margin: 4px;
+  border-radius: 5px;
+  qproperty-alignment: AlignCenter;
+]])
+
+GUI.PLogo_BItems = Geyser.Label:new({
+  name = &quot;GUI.PLogo_BItems&quot;,
+  x = 0, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.PLogo_Stripe )
+
+local radius = GUI.PLogo_BItems:get_height() / 1.05
+
+GUI.PLogo_BItems:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.PLogo_BItems&quot;,&quot;PButton_onEnter&quot;, &quot;BItems&quot;)
+setLabelOnLeave(&quot;GUI.PLogo_BItems&quot;,&quot;PButton_onLeave&quot;, &quot;BItems&quot;)
+
+GUI.PLogo_BItems:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Big Items&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.PLogo_SItems = Geyser.Label:new({
+  name = &quot;GUI.PLogo_SItems&quot;,
+  x = &quot;-25%&quot;, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.PLogo_Stripe )
+
+local radius = GUI.PLogo_SItems:get_height() / 1.05
+
+GUI.PLogo_SItems:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.PLogo_SItems&quot;,&quot;PButton_onEnter&quot;, &quot;SItems&quot;)
+setLabelOnLeave(&quot;GUI.PLogo_SItems&quot;,&quot;PButton_onLeave&quot;, &quot;SItems&quot;)
+
+GUI.PLogo_SItems:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Small Items&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.PLogo_BStripe = Geyser.Label:new({
+  name = &quot;GUI.PLogo_BStripe&quot;,
+  x = &quot;1%&quot;, y = &quot;46.5%&quot;,
+  width = &quot;23%&quot;,
+  height = &quot;2.5%&quot;,
+
+}, GUI.Background )
+
+GUI.PLogo_BStripe:setStyleSheet([[
+  background-color: rgb(150,150,150);
+]])
+
+GUI.PLogo_Production = Geyser.Label:new({
+  name = &quot;GUI.PLogo_Production&quot;,
+  x = 0, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.PLogo_BStripe )
+
+local radius = GUI.PLogo_Production:get_height() / 1.05
+
+GUI.PLogo_Production:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.PLogo_Production&quot;,&quot;PButton_onEnter&quot;, &quot;Production&quot;)
+setLabelOnLeave(&quot;GUI.PLogo_Production&quot;,&quot;PButton_onLeave&quot;, &quot;Production&quot;)
+
+GUI.PLogo_Production:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Production&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.PLogo_Population = Geyser.Label:new({
+  name = &quot;GUI.PLogo_Population&quot;,
+  x = &quot;-25%&quot;, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.PLogo_BStripe )
+
+local radius = GUI.PLogo_Population:get_height() / 1.05
+
+GUI.PLogo_Population:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.PLogo_Population&quot;,&quot;PButton_onEnter&quot;, &quot;Population&quot;)
+setLabelOnLeave(&quot;GUI.PLogo_Population&quot;,&quot;PButton_onLeave&quot;, &quot;Population&quot;)
+
+GUI.PLogo_Population:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Population&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.PLogo_Geology = Geyser.Label:new({
+  name = &quot;GUI.PLogo_Geology&quot;,
+  x = &quot;37.5%&quot;, y = 0,
+  width = &quot;25%&quot;,
+  height = &quot;100%&quot;,
+
+}, GUI.PLogo_BStripe )
+
+local radius = GUI.PLogo_Geology:get_height() / 1.05
+
+GUI.PLogo_Geology:setStyleSheet( styleSheet1:getCSS() )
+
+setLabelOnEnter(&quot;GUI.PLogo_Geology&quot;,&quot;PButton_onEnter&quot;, &quot;Geology&quot;)
+setLabelOnLeave(&quot;GUI.PLogo_Geology&quot;,&quot;PButton_onLeave&quot;, &quot;Geology&quot;)
+
+GUI.PLogo_Geology:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;Geology&lt;/center&gt;&lt;/span&gt;]])
+
+GUI.PLogo_Text = Geyser.Label:new({
+  name = &quot;GUI.PLogo_Text&quot;,
+  x = &quot;2.5%&quot;, y = &quot;0%&quot;,
+  width = &quot;20%&quot;,
+  height = &quot;5%&quot;,
+
+}, GUI.Background )
+
+GUI.PLogo_Text:setStyleSheet([[
+  background-color: transparent;
+]])
+
+local font_size = math.floor( GUI.PLogo_Text:get_height() / 1.75 )
+
+GUI.PLogo_Text:echo([[&lt;span style=&quot;color:black&quot;&gt;&lt;span style=&quot;font-size:]].. font_size ..[[px&quot;&gt;&lt;center&gt;PLANETS&lt;/center&gt;&lt;/span&gt;]])
+
+function PButton_onEnter(which)
+  local t = {
+    BItems = &quot;Big Items&quot;,
+    SItems = &quot;Small Items&quot;,
+    Population = &quot;Population&quot;,
+    Production = &quot;Production&quot;,
+    Geology = &quot;Geology&quot;
+  }
+  GUI[&quot;PLogo_&quot;..which]:echo([[&lt;b&gt;&lt;i&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;]]..t[which]..[[&lt;/center&gt;&lt;/span&gt;]])
+end
+
+function PButton_onLeave(which)
+  local t = {
+    BItems = &quot;Big Items&quot;,
+    SItems = &quot;Small Items&quot;,
+    Population = &quot;Population&quot;,
+    Production = &quot;Production&quot;,
+    Geology = &quot;Geology&quot;
+  }
+  GUI[&quot;PLogo_&quot;..which]:setStyleSheet( styleSheet1:getCSS() )
+  GUI[&quot;PLogo_&quot;..which]:echo([[&lt;b&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;center&gt;]]..t[which]..[[&lt;/center&gt;&lt;/span&gt;]])
+end</script>
+                    <eventHandlerList/>
+                </Script>
+                <Script isActive="yes" isFolder="no">
+                    <name>SR Scan</name>
+                    <packageName></packageName>
+                    <script>GUI.SR_Background = Geyser.Label:new({
+  name = &quot;GUI.SR_Back&quot;,
+  x = &quot;76%&quot;, y = &quot;2%&quot;,
+  width = &quot;23%&quot;,
+  height = &quot;47%&quot;,
+
+}, GUI.Background )
+
+GUI.SR_Background:setStyleSheet([[
+  background-color: transparent;
+]])
+
+local rows = 25
+
+local columns = {&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;,&quot;g&quot;,&quot;h&quot;,&quot;i&quot;,&quot;j&quot;,&quot;k&quot;,&quot;l&quot;,&quot;m&quot;,&quot;n&quot;,&quot;o&quot;,&quot;p&quot;,&quot;q&quot;,&quot;r&quot;,&quot;s&quot;,&quot;t&quot;,&quot;u&quot;,&quot;v&quot;,&quot;w&quot;,&quot;x&quot;,&quot;y&quot;}
+
+GUI.SR_VBox = Geyser.VBox:new({
+  name = &quot;GUI.SR_VBox&quot;,
+  x = 0, y = 0, width = &quot;100%&quot;, height = &quot;100%&quot;,
+
+}, GUI.SR_Background )
+
+for i=1, rows do
+  GUI[&quot;SR_Row&quot;..i] = Geyser.HBox:new({
+    name = &quot;GUI.SR_Row&quot;..i,
+
+  }, GUI.SR_VBox )
+
+  for k,j in pairs(columns) do
+    GUI[&quot;SR_Box&quot;..i..j] = Geyser.Label:new({
+      name = &quot;GUI.SR_Box&quot;..i..j,
+
+    }, GUI[&quot;SR_Row&quot;..i] )
+    GUI[&quot;SR_Box&quot;..i..j..&quot;CSS&quot;] = CSSMan.new([[
+      background-color: rgb(200,200,200);
+      border-style: dotted;
+      border-width: 1px;
+      border-color: white;
+   ]])
+   GUI[&quot;SR_Box&quot;..i..j]:setStyleSheet( GUI[&quot;SR_Box&quot;..i..j..&quot;CSS&quot;]:getCSS() )
+
+  end
+end</script>
+                    <eventHandlerList/>
+                </Script>
+                <Script isActive="no" isFolder="no">
+                    <name>GUI.UpdateSR</name>
+                    <packageName></packageName>
+                    <script>function GUI.UpdateSR()
+  sr = {}
+  local key = {
+  [&quot;?&quot;] = &quot;unknown&quot;,
+  [&quot;$&quot;] = &quot;black_hole&quot;,
+  [&quot;0&quot;] = &quot;planet_0&quot;,
+  [&quot;O&quot;] = &quot;planet_O&quot;,
+  [&quot;*&quot;] = &quot;star&quot;,
+  [&quot;N&quot;] = &quot;rocky_dead&quot;,
+  [&quot;M&quot;] = &quot;planet_M&quot;,
+  [&quot;B&quot;] = &quot;planet_B&quot;,
+  [&quot;A&quot;] = &quot;planet_A&quot;,
+  [&quot;D&quot;] = &quot;generic_dead&quot;,
+  [&quot; &quot;] = &quot;space&quot;,
+  [&quot;H&quot;] = &quot;home&quot;,
+  [&quot;C&quot;] = &quot;planet_C&quot;,
+  [&quot;Q&quot;] = &quot;planet_Q&quot;,
+  }
+  local letters = {&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;,&quot;g&quot;,&quot;h&quot;,&quot;i&quot;,&quot;j&quot;,&quot;k&quot;,&quot;l&quot;,&quot;m&quot;,&quot;n&quot;,&quot;o&quot;,&quot;p&quot;,&quot;q&quot;,&quot;r&quot;,&quot;s&quot;,&quot;t&quot;,&quot;u&quot;,&quot;v&quot;,&quot;w&quot;,&quot;x&quot;,&quot;y&quot;}
+  for k,v in pairs( sys.map_table ) do  -- k = iterator
+    str = v:reverse() 
+    sr[k] = {}
+    for r=1, 71 do                      -- r = iterator
+      for i,j in pairs( key ) do        -- i = symbols
+        if str:ends(i) then             -- j = symbol names
+          sr[k][r] = i
+          str = str:cut( str:len() -1 )
+          if r &lt; 26 and k &lt; 26 then
+
+            GUI[&quot;SR_Box&quot;..k..letters[r]..&quot;CSS&quot;]:set(&quot;border-image&quot;, [[url(]]..getMudletHomeDir():gsub(&quot;\\&quot;,&quot;/&quot;)..[[/]]..j..[[.png)]])
+            GUI[&quot;SR_Box&quot;..k..letters[r]]:setStyleSheet( GUI[&quot;SR_Box&quot;..k..letters[r]..&quot;CSS&quot;]:getCSS() )
+
+            GUI[&quot;SR_Box&quot;..k..letters[r]]:echo(&quot;&quot;)
+
+          end  -- if r &lt; 26
+        end --if str:ends(i)  
+      end -- for i,j
+    end -- for r=1
+  end -- for k,v
+  for i=1, #sr do
+    echo(i..&quot;: &quot;..table.concat(sr[i]):len()..&quot;\n&quot;)
+  end
+end -- function</script>
+                    <eventHandlerList/>
+                </Script>
+                <Script isActive="yes" isFolder="no">
+                    <name>NewScript</name>
+                    <packageName></packageName>
+                    <script>function sys.scan_to_table()
+
+  sr = {}
+
+  sys.map_start_x, sys.map_fin_x = 23, 49
+  sys.map_start_y, sys.map_fin_y = 23, 49
+
+  local key = {
+    [&quot;?&quot;] = &quot;unknown&quot;,
+    [&quot;$&quot;] = &quot;black_hole&quot;,
+    [&quot;0&quot;] = &quot;planet_0&quot;,
+    [&quot;O&quot;] = &quot;planet_O&quot;,
+    [&quot;*&quot;] = &quot;star&quot;,
+    [&quot;N&quot;] = &quot;rocky_dead&quot;,
+    [&quot;M&quot;] = &quot;planet_M&quot;,
+    [&quot;B&quot;] = &quot;planet_B&quot;,
+    [&quot;A&quot;] = &quot;planet_A&quot;,
+    [&quot;D&quot;] = &quot;generic_dead&quot;,
+    [&quot; &quot;] = &quot;space&quot;,
+    [&quot;H&quot;] = &quot;home&quot;,
+    [&quot;C&quot;] = &quot;planet_C&quot;,
+    [&quot;Q&quot;] = &quot;planet_Q&quot;,
+  }
+
+  for k, v in pairs(sys.map_table) do
+    sr[k] = {}
+    local count = 1
+    for str in v:gmatch &quot;.&quot; do
+      for symbol, description in pairs(key) do
+        if str == symbol then
+          sr[k][count] = symbol
+          break
+        end
+      end
+      count = count + 1
+    end
+  end
+end
+
+function sys.draw_map()
+  local key = {
+    [&quot;?&quot;] = &quot;unknown&quot;,
+    [&quot;$&quot;] = &quot;black_hole&quot;,
+    [&quot;0&quot;] = &quot;planet_0&quot;,
+    [&quot;O&quot;] = &quot;planet_O&quot;,
+    [&quot;*&quot;] = &quot;star&quot;,
+    [&quot;N&quot;] = &quot;rocky_dead&quot;,
+    [&quot;M&quot;] = &quot;planet_M&quot;,
+    [&quot;B&quot;] = &quot;planet_B&quot;,
+    [&quot;A&quot;] = &quot;planet_A&quot;,
+    [&quot;D&quot;] = &quot;generic_dead&quot;,
+    [&quot; &quot;] = &quot;space&quot;,
+    [&quot;H&quot;] = &quot;home&quot;,
+    [&quot;C&quot;] = &quot;planet_C&quot;,
+    [&quot;Q&quot;] = &quot;planet_Q&quot;,
+  }
+
+  local letters = {&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;,&quot;g&quot;,&quot;h&quot;,&quot;i&quot;,&quot;j&quot;,&quot;k&quot;,&quot;l&quot;,&quot;m&quot;,&quot;n&quot;,&quot;o&quot;,&quot;p&quot;,&quot;q&quot;,&quot;r&quot;,&quot;s&quot;,&quot;t&quot;,&quot;u&quot;,&quot;v&quot;,&quot;w&quot;,&quot;x&quot;,&quot;y&quot;}
+
+  for k,v in pairs(sr) do
+    for i,j in pairs(v) do
+      if k &gt; sys.map_start_x and i &gt; sys.map_start_y and k &lt; sys.map_fin_x and i &lt; sys.map_fin_y then 
+
+        local x,y = k-23, i-23
+
+        GUI[&quot;SR_Box&quot;..x..letters[y]..&quot;CSS&quot;]:set(&quot;border-image&quot;, [[url(]]..getMudletHomeDir():gsub(&quot;\\&quot;,&quot;/&quot;)..[[/ImperiumUIv2/]]..key[j]..[[.png)]])
+        GUI[&quot;SR_Box&quot;..x..letters[y]]:setStyleSheet( GUI[&quot;SR_Box&quot;..x..letters[y]..&quot;CSS&quot;]:getCSS() )
+      end
+    end
+  end
+
+end
+
+function sys.move_map( direction )
+  if direction == &quot;east&quot; then
+    sys.map_start_x = sys.map_start_x + 1
+    sys.map_fin_x =   sys.map_fin_x + 1
+  elseif direction == &quot;west&quot; then
+    sys.map_start = sys.map_start - 1
+  elseif direction == &quot;south&quot; then
+    sys.map_fin = sys.map_fin + 1
+  elseif direction == &quot;north&quot; then
+    sys.map_fin = sys.map_fin - 1
+  end
+  sys.draw_map()
+end</script>
+                    <eventHandlerList/>
+                </Script>
+            </ScriptGroup>
+        </ScriptGroup>
+    </ScriptPackage>
+    <KeyPackage/>
+</MudletPackage>
